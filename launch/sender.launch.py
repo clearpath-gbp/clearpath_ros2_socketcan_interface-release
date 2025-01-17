@@ -40,7 +40,6 @@ from launch_ros.events.lifecycle import ChangeState
 from lifecycle_msgs.msg import Transition
 
 
-
 def generate_launch_description():
     namespace = LaunchConfiguration('namespace')
     interface = LaunchConfiguration('interface')
@@ -81,7 +80,7 @@ def generate_launch_description():
     node = LifecycleNode(
         package='ros2_socketcan',
         executable='socket_can_sender_node_exe',
-        name='socket_can_sender',
+        name=[interface, '_socket_can_sender'],
         namespace=namespace,
         parameters=[{
             'interface': interface,
