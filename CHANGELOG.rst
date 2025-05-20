@@ -2,19 +2,50 @@
 Changelog for package clearpath_ros2_socketcan_interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.0.2 (2025-04-09)
+2.1.2 (2025-05-20)
+------------------
+* Fix: Use script instead of OpaqueFunction (`#12 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/12>`_)
+  * Use script instead of OpaqueFunction
+  * Add missing line
+  * Add license header
+  * Add EOF line
+  * Add retry in the event lifecycle service is not up yet
+* Use arguments instead of perform(context) (`#11 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/11>`_)
+* Reattempt transitions on failure (`#10 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/10>`_)
+  * Reattempt lifecycle transitions on failure
+  * Unique activator node names
+  * Removed namespace from node name
+  * Linting
+* Fix: Multiple IncludeLaunchDescription (`#9 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/9>`_)
+  * Use opaque function
+  * Add import and context
+  * Type performed context
+* Contributors: Roni Kreinin, luis-camero
+
+2.1.1 (2025-04-08)
 ------------------
 * Increased timeout to 1 second (`#8 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/8>`_)
 * Contributors: Roni Kreinin
 
-1.0.1 (2024-12-17)
+2.1.0 (2025-01-31)
 ------------------
-* Add our own launch files that allow us to change namespaces
-* Contributors: Luis Camero
+* Wait for interface to be up before launching node (`#7 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/7>`_)
+  * Wait for interface to be UP before starting node
+* Updated CI to Jazzy. (`#5 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/5>`_)
+* Contributors: Roni Kreinin, Tony Baltovski
 
+2.0.1 (2025-01-17)
+------------------
+* Lint launch files (`#4 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/4>`_)
+* Prefix node names with can interface
+* Add our own launch files that allow us to change namespaces
+* Change CI to Humble.
+* Contributors: Luis Camero, Roni Kreinin, Tony Baltovski, luis-camero
+
+2.0.0 (2024-11-21)
+------------------
 1.0.0 (2024-11-21)
 ------------------
-* Change CI to Humble.
 * Added README.
 * Disabled copyright tests.
 * Fixed linting.
@@ -22,15 +53,10 @@ Changelog for package clearpath_ros2_socketcan_interface
 * Added issue templates.
 * Added codeowners.
 * Updated package.xml
-* Merge pull request `#2 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/2>`_ from clearpathrobotics/rkreinin/callback
-  Constructor with callback
 * Tx queue and wall timer
 * Constructor with callback
-  License
-* Merge pull request `#1 <https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface/issues/1>`_ from clearpathrobotics/cib/jazzy-fixes
-  Small code styling to make default tests pass
 * Small code styling to make default tests pass
 * Add delay before publishing messages
 * Initial add of clearpath_ros2_socketcan_interface
 * Initial commit
-* Contributors: Chris Iverach-Brereton, Luis Camero, Roni Kreinin, Tony Baltovski, luis-camero
+* Contributors: Chris Iverach-Brereton, Luis Camero, Roni Kreinin, Tony Baltovski
