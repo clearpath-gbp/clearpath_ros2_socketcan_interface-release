@@ -1,3 +1,26 @@
+## clearpath_ros2_socketcan_interface (humble) - 1.0.3-1
+
+The packages in the `clearpath_ros2_socketcan_interface` repository were released into the `humble` distro by running `/usr/bin/bloom-release clearpath_ros2_socketcan_interface -r humble -t humble` on `Wed, 23 Jul 2025 18:48:05 -0000`
+
+The `clearpath_ros2_socketcan_interface` package was released.
+
+Version of package(s) in repository `clearpath_ros2_socketcan_interface`:
+
+- upstream repository: https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface.git
+- release repository: https://github.com/clearpath-gbp/clearpath_ros2_socketcan_interface-release.git
+- rosdistro version: `1.0.2-1`
+- old version: `1.0.2-1`
+- new version: `1.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## clearpath_ros2_socketcan_interface (jazzy) - 2.1.4-2
 
 The packages in the `clearpath_ros2_socketcan_interface` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release clearpath_ros2_socketcan_interface -t jazzy -r jazzy` on `Fri, 13 Jun 2025 14:10:04 -0000`
